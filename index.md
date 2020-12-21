@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+1）．试论述类与用例的区别。
 
-You can use the [editor on GitHub](https://github.com/guocheng20182123068/guocheng20182123068.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+类是对一组具有相同属性、操作、关系和语义的对象的描述。类是对事物的抽象。而用例是对一组序列动作的描述，系统执行这些动作将对用例的参与者产生可以观察的结果。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+2）．试比较边界类与实体类的异同。
+实体类是对系统中需要存储的信息和其信息的行为建立模型。实体类具有永久的特性，这类似于数据库中的表一样用于保存系统的业务信息。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+边界类位于系统与外界的交接处，它在一个或多个角色和系统之间建立相互作用的模型。
 
-```markdown
-Syntax highlighted code block
+3）．试运用本节所学的静态建模技术找出用户管理模块中的所有的类。
 
-# Header 1
-## Header 2
-### Header 3
+用户类，用户管理界面类，数据库操作类
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+4）．请找出学生管理系统中学生注册用例的实体类，边界类，控制类。
 
-**Bold** and _Italic_ and `Code` text
+学生类就是实体类，边界类应该是注册界面类，控制类应该是注册类，对应的是用例中的注册。
 
-[Link](url) and ![Image](src)
-```
+5）．什么是依赖？它与关联有什么区别？
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+依赖是一种使用关系，它说明了一个事物声明说明的变化可能影响到使用它的另一个事物，但反之未必。也就是说，服务的使用者以某种方式依赖于服务的提供者。而关联是一种结构关系，它详述了一个事物的对象与另一个事物的对象相互联系。
 
-### Jekyll Themes
+6)．什么是泛化？泛化是否就是类的继承，如果不是请说明理由。
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/guocheng20182123068/guocheng20182123068.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+泛化是一般事物（称为父类或超类）和较特殊事物（称为子类或孩子类）之间的关系。泛化不是类的继承，类的继承是泛化的一种。
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+7).  试论述聚合和组合的异同。
+
+聚合描述了整体对象拥有部分对象的关系。组合是聚合的一种形式，它具有强的拥有关系，
+而且整体与部分的生命周期是一致的。
